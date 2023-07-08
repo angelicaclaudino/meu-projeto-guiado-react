@@ -1,0 +1,18 @@
+.sobreContainer {
+    background: #410316;
+    display: flex;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem;
+    list-style: none;
+  }
+  
+  .cardContainer {
+    text-decoration:none;
+    color: #f6f6fc;
+    font-size: 1.5rem;
+  }
+
+  

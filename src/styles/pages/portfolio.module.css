@@ -1,0 +1,24 @@
+.repoContainer {
+    background: #410316;
+    display: grid;
+    grid-template-columns: repeat(4, 5fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem;
+    list-style: none;
+  }
+  
+  .cardLink {
+    text-decoration:none;
+    color: #ca70a8;
+    font-size: 1.5rem;
+  }
+
+  .cardRepo {
+    text-decoration: none;
+    color: #f0f0f5;
+    font-size: 1.5rem;
+    background-color: rgb(173, 29, 89);
+    border: #0e0d0d;
+  }
