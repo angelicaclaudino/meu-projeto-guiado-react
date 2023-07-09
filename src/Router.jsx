@@ -3,7 +3,7 @@ import Menu from './components/Menu'
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Portfolio from './pages/Portfolio'
-// import Contato from './pages/Contato'
+import Contato from './pages/Contato'
 import Footer from './components/Footer'
 
 
@@ -15,7 +15,7 @@ const Router = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/sobre" element={<Sobre/>} />
         <Route path="/portfolio" element={<Portfolio/>} />
-        {/* <Route path="/contato" element={<Contato />} /> */}
+        <Route path="/contato" element={<Contato />} />
       </Routes>
       <Footer content="Feito pela Angélica ♡" />
     </BrowserRouter>

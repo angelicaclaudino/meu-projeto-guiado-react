@@ -1,9 +1,10 @@
 import Header from "../components/Header"
 
-// import database from '../service/firebase'
-// import { ref, push, set } from 'firebase/database'
+import database from '../service/firebase'
+import { ref, push, set } from 'firebase/database'
 
 import contato from '../assets/contato.svg'
+
 
 import styles from '../styles/pages/contato.module.css'
 import { useState } from "react"
@@ -25,26 +26,26 @@ const Contato = () => {
     setMensagem(e.target.value)
   }
 
-//   function handleSubmit(e) {
-//     e.preventDefault()
+  function handleSubmit(e) {
+    e.preventDefault()
     
-//     const messageListRef = ref(database, 'mensagens') // cria uma coleção no db do firebase
-//     const newMessageRef = push(messageListRef) // cria nova mensagem e enviar para a nossa coleção "mensagens"
-//     set(newMessageRef, {
-//       nome: nome,
-//       email: email,
-//       texto: mensagem
-//     })
+    const messageListRef = ref(database, 'mensagens') // cria uma coleção no db do firebase
+    const newMessageRef = push(messageListRef) // cria nova mensagem e enviar para a nossa coleção "mensagens"
+    set(newMessageRef, {
+      nome: nome,
+      email: email,
+      texto: mensagem
+    })
 
-//     setNome('')
-//     setEmail('')
-//     setMensagem('')
-//   }
+    setNome('')
+    setEmail('')
+    setMensagem('')
+  }
 
   return (
     <>
       <Header 
-        title="Mande mensagem para lili" 
+        title="Fica à vontade para me enviar uma mensagem!" 
         image={contato} 
       />
       <main>
