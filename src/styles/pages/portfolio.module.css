@@ -1,5 +1,5 @@
 .repoContainer {
-    background: #410316;
+    
     display: grid;
     grid-template-columns: repeat(4, 5fr);
     justify-content: center;
